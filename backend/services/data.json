@@ -1,0 +1,3167 @@
+{
+    "ingredients": [
+        {
+            "name": "tomato",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "cucumber",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "potato",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "carrot",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "onion",
+            "category": "vegetable",
+            "alternative": [
+                "shallot"
+            ]
+        },
+        {
+            "name": "celery",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "leek",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "lettuce",
+            "category": "vegetable",
+            "alternative": [
+                "greens",
+                "romaine",
+                "iceberg"
+            ]
+        },
+        {
+            "name": "chard",
+            "category": "vegetable",
+            "alternative": [
+                "greens",
+                "beet greens"
+            ]
+        },
+        {
+            "name": "sweet potato",
+            "category": "vegetable",
+            "alternative": [
+                "yam"
+            ]
+        },
+        {
+            "name": "mushroom",
+            "category": "vegetable",
+            "alternative": [
+                "shiitake",
+                "penny bun",
+                "porcini",
+                "shimeji",
+                ""
+            ]
+        },
+        {
+            "name": "artichoke",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "green beans",
+            "category": "vegetable",
+            "alternative": [
+                "string beans",
+                "long beans"
+            ]
+        },
+        {
+            "name": "eggplant",
+            "category": "vegetable",
+            "alternative": [
+                "aubergine"
+            ]
+        },
+        {
+            "name": "asparagus",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "broccoli",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "brussels sprouts",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "cabbage",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "kohlrabi",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "cauliflower",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "fennel",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "bok choy",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "mustard greens",
+            "category": "vegetable",
+            "alternative": [
+                "arugula"
+            ]
+        },
+        {
+            "name": "spinach",
+            "category": "vegetable",
+            "alternative": [
+                "greens"
+            ]
+        },
+        {
+            "name": "chives",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "garlic",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "Scallion",
+            "category": "vegetable",
+            "alternative": [
+                "spring onion"
+            ]
+        },
+        {
+            "name": "bell pepper",
+            "category": "vegetable",
+            "alternative": [
+                "capsicum",
+                "sweet pepper"
+            ]
+        },
+        {
+            "name": "corn",
+            "category": "vegetable",
+            "alternative": [
+                "sweetcorn"
+            ]
+        },
+        {
+            "name": "chili pepper",
+            "category": "vegetable",
+            "alternative": [
+                "jalapeño",
+                "cayenne"
+            ]
+        },
+        {
+            "name": "beet",
+            "category": "vegetable",
+            "alternative": [
+                "beetroot"
+            ]
+        },
+        {
+            "name": "ginger",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "radish",
+            "category": "vegetable",
+            "alternative": [
+                "daikon"
+            ]
+        },
+        {
+            "name": "squash",
+            "category": "vegetable",
+            "alternative": [
+                "pumpkin",
+                "acorn"
+            ]
+        },
+        {
+            "name": "zucchini",
+            "category": "vegetable",
+            "alternative": [
+                "courgette"
+            ]
+        },
+        {
+            "name": "sprouts",
+            "category": "vegetable",
+            "alternative": []
+        },
+        {
+            "name": "banana",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "apple",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "apricot",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "avocado",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "blackberries",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "blueberries",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "cantaloup",
+            "category": "fruit",
+            "alternative": [
+                "melon",
+                "honeydew"
+            ]
+        },
+        {
+            "name": "carambola",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "cherries",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "clementine",
+            "category": "fruit",
+            "alternative": [
+                "tangerine",
+                "manderine"
+            ]
+        },
+        {
+            "name": "coconut",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "cranberries",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "date",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "grapefruit",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "grapes",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "guava",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "plum",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "kiwi",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "lemon",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "lychee",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "mango",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "mulberries",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "nectarine",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "passion fruit",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "peach",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "pear",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "persimmon",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "pineapple",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "pomegranate",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "pomelo",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "raspberries",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "strawberries",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "watermelon",
+            "category": "fruit",
+            "alternative": []
+        },
+        {
+            "name": "peas",
+            "category": "legumes and grains",
+            "alternative": []
+        },
+        {
+            "name": "chickpeas",
+            "category": "legumes and grains",
+            "alternative": []
+        },
+        {
+            "name": "lentils",
+            "category": "legumes and grains",
+            "alternative": []
+        },
+        {
+            "name": "beans",
+            "category": "legumes and grains",
+            "alternative": []
+        },
+        {
+            "name": "rice",
+            "category": "legumes and grains",
+            "alternative": []
+        },
+        {
+            "name": "oats",
+            "category": "legumes and grains",
+            "alternative": []
+        },
+        {
+            "name": "wheat",
+            "category": "legumes and grains",
+            "alternative": []
+        },
+        {
+            "name": "buckwheat",
+            "category": "legumes and grains",
+            "alternative": []
+        },
+        {
+            "name": "quinoa",
+            "category": "legumes and grains",
+            "alternative": []
+        },
+        {
+            "name": "rye",
+            "category": "legumes and grains",
+            "alternative": []
+        },
+        {
+            "name": "teff",
+            "category": "legumes and grains",
+            "alternative": []
+        },
+        {
+            "name": "spelt",
+            "category": "legumes and grains",
+            "alternative": []
+        },
+        {
+            "name": "soy",
+            "category": "legumes and grains",
+            "alternative": []
+        },
+        {
+            "name": "peanuts",
+            "category": "nuts and seeds",
+            "alternative": []
+        },
+        {
+            "name": "almonds",
+            "category": "nuts and seeds",
+            "alternative": []
+        },
+        {
+            "name": "cashew",
+            "category": "nuts and seeds",
+            "alternative": []
+        },
+        {
+            "name": "hazelnuts",
+            "category": "nuts and seeds",
+            "alternative": []
+        },
+        {
+            "name": "macadamias",
+            "category": "nuts and seeds",
+            "alternative": []
+        },
+        {
+            "name": "pecans",
+            "category": "nuts and seeds",
+            "alternative": []
+        },
+        {
+            "name": "pine nuts",
+            "category": "nuts and seeds",
+            "alternative": []
+        },
+        {
+            "name": "pistachios",
+            "category": "nuts and seeds",
+            "alternative": []
+        },
+        {
+            "name": "walnuts",
+            "category": "nuts and seeds",
+            "alternative": []
+        },
+        {
+            "name": "pumpkin seeds",
+            "category": "nuts and seeds",
+            "alternative": []
+        },
+        {
+            "name": "sesame seeds",
+            "category": "nuts and seeds",
+            "alternative": []
+        },
+        {
+            "name": "poppy seeds",
+            "category": "nuts and seeds",
+            "alternative": []
+        },
+        {
+            "name": "sunflower seeds",
+            "category": "nuts and seeds",
+            "alternative": []
+        },
+        {
+            "name": "chia seeds",
+            "category": "nuts and seeds",
+            "alternative": []
+        },
+        {
+            "name": "milk",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "eggs",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "butter",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "yogurt",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "cream",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "parmesan",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "cream cheese",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "cheddar",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "mozzarella",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "feta",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "ricotta",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "blue cheese",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "monterey jack",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "swiss cheese",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "pecorino",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "cottage cheese",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "provolone",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "pepper jack",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "brie",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "gouda",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "halloumi",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "manchego",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "camembert",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "edam",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "labneh",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "kashkaval",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "sulguni",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "paneer",
+            "category": "dairy and eggs",
+            "alternative": []
+        },
+        {
+            "name": "basil",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "dill",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "cilantro",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "mint",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "parsley",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "sage",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "cinnamon",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "cumin",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "thyme",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "garlic powder",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "oregano",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "chilli flake",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "paprika",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "bay leaf",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "nutmeg",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "clove",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "tumeric",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "coriander",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "smoked paprika",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "cardamom",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "allspice",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "peppercorn",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "white pepper",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "mustard seed",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "tarragon",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "fennel seed",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "curry leaves",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "saffron",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "star anise",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "lemongrass",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "tamarind",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "fenugreek",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "curry powder",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "sumac",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "lavender",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "chamomile",
+            "category": "spices and herbs",
+            "alternative": []
+        },
+        {
+            "name": "bacon",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "ground beef",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "beef steak",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "ham",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "pork loin",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "suasage",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "pork fillet",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "prosciutto",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "ground pork",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "pork chops",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "chorizo",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "pancetta",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "pepperoni",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "pork ribs",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "ground lamb",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "pork shoulder",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "hot dog",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "salami",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "beef ribs",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "corned beef",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "pork belly",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "beef sirloin",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "lamb chops",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "ham steak",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "pulled pork",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "brisket",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "lamb loin",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "veal cutlet",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "spam",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "beef liver",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "beef sausage",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "pastrami",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "lamb neck",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "veal chops",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "burger patty",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "beef shoulder",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "beef schnitzel",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "merguez sausage",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "chicken breast",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "chicken thighs",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "turkey breast",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "whole chicken",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "ground turkey",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "chicken wings",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "chicken leg",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "ground chicken",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "rotisserie chicken",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "chicken tenders",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "turkey sausage",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "chicken sausage",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "duck",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "boneless chicken",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "cornich hen",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "chicken livers",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "whole turkey",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "chicken quarters",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "quail",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "turkey thigh",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "turkey leg",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "turkey wing",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "turkey schnitzel",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "chicken schnitzel",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "salmon",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "canned tuna",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "canned anchovy",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "smoked salmon",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "cod",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "tilapia",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "tuna steak",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "trout",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "whitefish",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "halibut",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "sea bass",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "red snapper",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "canned salmon",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "catfish",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "swordfish",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "sardines",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "mackerel",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "sole",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "haddock",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "caviar",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "monkfish",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "flounder",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "herring",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "smoked mackerel",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "sea bream",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "bacon",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "cattle fish",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "grouper",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "carp",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "roe",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "eel",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "canned sardines",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "yellowtail",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "red mullet",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "mullet",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "shrimp",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "crab",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "prawns",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "scallop",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "mussel",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "clam",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "squid",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "nori",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "lobster",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "oyster",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "crawfish",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "octupus",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "surimi",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "kombu",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "wakame",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "mixed seafood",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "roasted seaweed",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "dulse seaweed",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "kelp",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "arame",
+            "category": "meats, poultry and seafood",
+            "alternative": []
+        },
+        {
+            "name": "tofu",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "firm tofu",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "silk tofu",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "soy milk",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "almond milk",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "plant-based milk",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "oat milk",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "rice milk",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "tempeh",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "vegan butter",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "vegan mayonnaise",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "vegan cheese",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "egg replacer",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "non-dairy yogurt",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "soy yogurt",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "textured vegetable protein",
+            "category": "vegan",
+            "alternative": [
+                "tvp"
+            ]
+        },
+        {
+            "name": "aquafaba",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "seitan",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "vegan sausage",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "vegan burger patty",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "soy curls",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "okara",
+            "category": "vegan",
+            "alternative": []
+        },
+        {
+            "name": "penne",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "spaghetti",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "noodle",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "macaroni",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "lasagna",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "linguine",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "fettucine",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "pasta shell",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "bow-tie pasta",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "tortellini",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "rice noodles",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "gnocchi",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "rigatoni",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "vermicelli",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "ramen noodles",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "tagliatelle",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "soba noodles",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "ravioli",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "couscous",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "udon noodles",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "glass noodles",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "pappardelle",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "cannelloni",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "wontons",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "shirataki noodles",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "somen noodles",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "radiatore",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "spaetzele",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "frozen dumplings",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "palmini",
+            "category": "pasta",
+            "alternative": []
+        },
+        {
+            "name": "flour",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "vanilla",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "baking powder",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "cornstarch",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "cocoa",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "yeast",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "whole-wheat flour",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "self-raising flour",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "panko",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "almond flour",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "almond extract",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "baking chocolate",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "cornmeal",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "shredded coconut",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "food coloring",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "coconut flake",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "corn flour",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "gelatin",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "almond meal",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "coconut flour",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "cake flour",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "baking mix",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "bread flour",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "rice flour",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "instant pudding",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "xanthan gum",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "peppermint extract",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "chickpea flour",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "oat flour",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "espresso powder",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "lemon extract",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "brownie mix",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "rose water",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "coconut extract",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "potato starch",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "flaxseed meal",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "tapioca starch",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "orange extract",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "buckwheat flour",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "jell-o",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "cocoa nibs",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "rye flour",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "semolina flour",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "rum extract",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "potato flakes",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "pancake mix",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "maple extract",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "marzipan",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "vanilla pudding",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "orange blossom water",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "coffee beans",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "agar agar",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "chocolate powder",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "fondant",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "vital wheat gluten",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "strawberry extract",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "potato flour",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "tapioca pearls",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "lentil flour",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "coffee extract",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "tapioca pearls",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "chocolate chips",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "dark chocolate",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "sugar",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "brown sugar",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "honey",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "maple syrup",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "corn syrup",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "milk chocolate",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "coconut sugar",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "molasses",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "stevia",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "agave nectar",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "erythritol",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "demerara sugar",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "vanilla sugar",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "golden syrup",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "grenadine",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "pomegranate molasses",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "glucose",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "xylitol",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "date syrup",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "strawberry syrup",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "pomegrante syrup",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "mastic",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "fructose",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "white chocolate",
+            "category": "baking",
+            "alternative": []
+        },
+        {
+            "name": "soy sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "dijon mustard",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "worcestershire",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "hot sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "mustard",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "ketchup",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "capers",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "fish sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "green olives",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "bbq sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "black olives",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "sun dried tomatos",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "apple sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "kalamata olives",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "srirach",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "pickle",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "tamari",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "chili sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "chipotle",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "oyster sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "teriyaki sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "suaerkraut",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "buffalo sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "harissa",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "cranberry sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "crispy onion",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "mango chutney",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "honey mustard",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "kimchi",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "pickled lemon",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "chutney",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "shrimp paste",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "pickled onions",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "sweet and sour sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "tartar sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "mayonnaise",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "apple cider vinegar",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "balsamic vinegar",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "vinegar",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "red wine vinegar",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "white wine vinegar",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "ranch dressing",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "rice vinegar",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "italian dressing",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "sherry vinegar",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "sweet chili sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "vinaigrette dressing",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "balsamic vinaigrette",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "blue cheese dressing",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "thousand island",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "caesar dressing",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "citric acid",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "umeboshi",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "misso",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "canned tomato",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "peanut butter",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "tomato paste",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "tomato sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "salsa",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "thini",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "pesto",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "marinara sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "hoisin sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "hummus",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "guacamole",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "bechamel sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "tapenade",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "hollandaise sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "aioli sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "demi-glace",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "chimichurri sauce",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "curry paste",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "tikka masala",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "mole paste",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "broth",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "olive oil",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "vegetable oil",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "canola oil",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "coconut oil",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "sesame oil",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "cooking spray",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "shortening",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "sunflower oil",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "peanut oil",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "avocado oil",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "grapeseed oil",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "corn oil",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "chili oil",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "walnut oil",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "soybean oil",
+            "category": "condiments and sauces",
+            "alternative": []
+        },
+        {
+            "name": "bread",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "pie crust",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "puff pastry",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "pizza crust",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "phyllo",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "wonton warpper",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "biscuit dough",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "rice paper",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "sourdough starter",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "cookie dough",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "egg roll wrapper",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "crescent roll dough",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "bread dough",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "gyoza wrapper",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "dosa batter",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "brisee",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "rough-puff pastry",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "empanada",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "bread crumbs",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "flour tortillas",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "corn tortillas",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "crackers",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "baguette",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "tortilla chips",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "pita",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "pretzels",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "sourdough bread",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "popcorn",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "ciabatta",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "croutons",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "english muffin",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "brioche",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "rye bread",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "flatbread",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "potato chips",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "hashbrowns",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "bagel",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "taco shells",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "cornbread",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "tater tots",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "corn chips",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "croissants",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "matzo",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "muffin",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "french fries",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "pita chips",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "breadsticks",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "focaccia",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "challa",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "rice cake",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "cheetos",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "crumpet",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "bao bun",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "poppadoms",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "breading mix",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "trail mix",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "tratlet shells",
+            "category": "bread and doughs",
+            "alternative": []
+        },
+        {
+            "name": "beer",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "red wine",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "white wine",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "vodka",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "rum",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "bourbon",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "liqueur",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "cider",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "sherry",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "tequila",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "brandy",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "gin",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "whisky",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "bitters",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "mirin",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "champagne",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "coffee liqueur",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "vermouth",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "irish cream",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "cognac",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "amaretto",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "sparkling wine",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "sake",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "shaoxing wine",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "rice wine",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "schnapps",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "port wine",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "rose wine",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "limoncello",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "absinthe",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "aperol",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "creme de cassis",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "grapa",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "orange juice",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "coffee",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "club soda",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "pineapple juice",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "apple juice",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "tea",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "espresso",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "cranberry juice",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "lemonade",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "coconut water",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "tomato juice",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "pomegranate juice",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "grapefruit juice",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "coke",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "ginger ale",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "eggnog",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "coconut cream",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "coconut liquid",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "sprite",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "tonic water",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "grape juice",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "cherry juice",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "mango juice",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "juice",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "kambucha",
+            "category": "alchohol and beverages",
+            "alternative": []
+        },
+        {
+            "name": "mead",
+            "category": "alchohol and beverages",
+            "alternative": []
+        }
+    ]
+}
