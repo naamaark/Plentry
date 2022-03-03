@@ -14,10 +14,10 @@
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "express-session": "^1.17.2",
+    "mongodb": "^4.4.0",
     "nodemon": "^2.0.15",
     "puppeteer": "^13.2.0",
     "recipe-ingredient-parser-v3": "^1.2.14"
   },
-  "devDependencies": {},
   "description": ""
 }
