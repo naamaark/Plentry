@@ -61,7 +61,7 @@ Go to the project frontend directory and repeat
 
 ## Screenshots
 
-![App Screenshot]<p><img src="./Screenshot Plentry.png" width="220" height="240" /></p>
+<p><img src="./Screenshot Plentry.png"/></p>
 
 
 ## Authors
