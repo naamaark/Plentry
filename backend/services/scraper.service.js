@@ -2,7 +2,6 @@ const puppeteer = require('puppeteer')
 
 async function scrapeRecipe(url, regex) {
     try {
-        console.log('scraping recipe');
         const browser = await puppeteer.launch();
         const page = await browser.newPage();
         await page.goto(url);
@@ -36,8 +35,6 @@ async function _getIngredients(el1, el2, regex) {
     })
     ingredients = await Promise.all(ingredients);
     ingredients = ingredients.filter(ingredient => ingredient)
-    ingredients = new Set(ingredients)
-    ingredients = Array.from(ingredients)
     return ingredients
 }
 

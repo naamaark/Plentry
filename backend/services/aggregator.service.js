@@ -4,18 +4,24 @@ module.exports = {
     matchIngredietns
 }
 
-const fakeIngredients = ['tomatoes', 'canola oil', 'ginger', 'garlic cloves', 'onion', 'pods', 'whole cloves', 'masala', 'chili powder chili powder', 'coriander', 'cumin', 'salt', 'water', 'syrup', 'cream', 'peas', 'paneer cubes', 'fenugreek', 'cilantro']
-
 async function matchIngredietns(ingredientsFromParse) {
-    console.log('aggregator service');
     try {
         const collection = await dbService.getCollection('Ingredients')
+        let num = await collection.countDocuments()
         let ingredients = await ingredientsFromParse.map(async (ingredient) => {
-            const matchedIngredient = await matchIngredient(ingredient, collection)
-            const returnedIngredient = matchedIngredient ? matchedIngredient.name : null
-            return returnedIngredient
+            if (!ingredient) {
+                return null
+            }
+            const pipeline = await _getPipeline(ingredient)
+            let matchedIngredient = await collection.aggregate(pipeline)
+            matchedIngredient = await matchedIngredient.toArray()
+            if (matchedIngredient.length === 0) {
+                return null
+            }
+            matchedIngredient = matchedIngredient.shift()
+            return matchedIngredient.name
         })
-        console.log('resolving promises');
+
         ingredients = await Promise.all(ingredients);
         return ingredients
     } catch (error) {
@@ -23,16 +29,13 @@ async function matchIngredietns(ingredientsFromParse) {
     }
 }
 
-async function matchIngredient(ingredientFromParse, collection) {
-    try {
-        const pipeline = await _getPipeline(ingredientFromParse)
-        let ingredient = await collection.aggregate(pipeline)
-        ingredient = await ingredient.toArray()
-        return ingredient.shift()
-    } catch (error) {
-        throw error
-    }
-}
+// async function matchIngredient(ingredientFromParse, collection) {
+//     try {
+
+//     } catch (error) {
+//         throw error
+//     }
+// }
 
 async function _getPipeline(ingredientFromParse) {
 
