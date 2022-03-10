@@ -1,28 +1,32 @@
 const dbService = require('../../services/db.service')
 const scraperService = require('../../services/scraper.service')
-const aggregatorService = require('../../services/aggregator.service')
 const searchRecipeService = require('../../services/search.recipe.service')
 const ObjectId = require('mongodb').ObjectId
+
+module.exports = {
+    query
+}
 
 getRecipesOnline(['tomato', 'carrot', 'onion', 'banana']).then(res => {
     console.log('recipes!:', res);
 })
 
-
-module.exports = {
-    query,
-    getRecipesOnline
-}
-
-async function query(filterBy = {}) {
-    const criteria = _buildCriteria(filterBy)
+async function query(filterBy = { isIngredients: false, isOnline: false, title="", ingredients=[] }) {
+    const { isIngredients, isOnline, title, ingredients } = filterBy
+    const criteria = _buildCriteria(title)
+    const pipeline = _buildRecipePipeline(ingredients)
     try {
         const collection = await dbService.getCollection('recipes')
-        var recipes = await collection.find(criteria).toArray()
-        recipes = recipes.map(recipe => {
-            recipe.createdAt = ObjectId(recipe._id).getTimestamp()
-            return recipe
-        })
+        var recipes = []
+        if (isIngredients && isOnline) {
+            recipes = await getRecipesOnline(ingredients)
+        }
+        else if (isIngredients) {
+            recipes = await collection.aggregate(pipeline).toArray()
+        }
+        else {
+            recipes = await collection.find(criteria).toArray()
+        }
         return recipes
     } catch (err) {
         console.log('error', err);
@@ -38,7 +42,7 @@ async function getRecipesOnline(ingredients) {
         if (!rawRecipe.ingredients) {
             return null
         }
-        let ingredients = await aggregatorService.matchIngredietns(rawRecipe.ingredients)
+        let ingredients = await matchIngredietns(rawRecipe.ingredients)
 
         ingredients = ingredients.filter(ingredient => ingredient)
         ingredients = new Set(ingredients)
@@ -50,6 +54,31 @@ async function getRecipesOnline(ingredients) {
     recipes = recipes.filter(recipe => recipe)
     _updateRecipes(recipes)
     return recipes
+}
+
+async function matchIngredietns(ingredientsFromParse) {
+    try {
+        const collection = await dbService.getCollection('Ingredients')
+        let num = await collection.countDocuments()
+        let ingredients = await ingredientsFromParse.map(async (ingredient) => {
+            if (!ingredient) {
+                return null
+            }
+            const pipeline = await _buildIngredientPipeline(ingredient)
+            let matchedIngredient = await collection.aggregate(pipeline)
+            matchedIngredient = await matchedIngredient.toArray()
+            if (matchedIngredient.length === 0) {
+                return null
+            }
+            matchedIngredient = matchedIngredient.shift()
+            return matchedIngredient.name
+        })
+
+        ingredients = await Promise.all(ingredients);
+        return ingredients
+    } catch (error) {
+        throw error
+    }
 }
 
 async function _updateRecipes(recipes) {
@@ -64,10 +93,10 @@ async function _updateRecipes(recipes) {
     })
 }
 
-function _buildCriteria(filterBy) {
+function _buildCriteria(title) {
     const criteria = {}
-    if (filterBy.txt) {
-        const txtCriteria = { $regex: filterBy.txt, $options: 'i' }
+    if (title) {
+        const txtCriteria = { $regex: title, $options: 'i' }
         criteria.$or = [
             {
                 title: txtCriteria
@@ -75,5 +104,67 @@ function _buildCriteria(filterBy) {
         ]
     }
     return criteria
+}
+
+function _buildRecipePipeline(ingredients) {
+    try {
+        return [
+            {
+                '$match': {
+                    'ingredients': {
+                        '$in': [...ingredients]
+                    }
+                }
+            }, {
+                '$set': {
+                    'missingIngredients': {
+                        '$setDifference': [
+                            '$ingredients',
+                            [...ingredients]
+                        ]
+                    }
+                }
+            }, {
+                '$set': {
+                    'missing_num': {
+                        '$size': '$missingIngredients'
+                    }
+                }
+            }, {
+                '$sort': {
+                    'missing_num': 1
+                }
+            }, {
+                '$limit': 10
+            }
+        ]
+    } catch (error) {
+        throw error
+    }
+}
+
+async function _buildIngredientPipeline(ingredientFromParse) {
+
+    try {
+        return [
+            {
+                '$search': {
+                    'text': {
+                        'path': 'name',
+                        'query': ingredientFromParse,
+                        'fuzzy': {}
+                    }
+                }
+            },
+            {
+                '$project': {
+                    'name': 1,
+                    score: { $meta: "searchScore" }
+                }
+            }
+        ]
+    } catch (error) {
+        throw error
+    }
 }
 
