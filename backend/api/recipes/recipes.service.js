@@ -4,12 +4,20 @@ const searchRecipeService = require('../../services/search.recipe.service')
 const ObjectId = require('mongodb').ObjectId
 
 module.exports = {
-    query
+    query,
+    getIngredients
 }
 
-getRecipesOnline(['tomato', 'carrot', 'onion', 'banana']).then(res => {
-    console.log('recipes!:', res);
-})
+async function getIngredients(category) {
+    try {
+        const collection = await dbService.getCollection('ingredients')
+        const ingredients = await collection.find({ 'category': category }).toArray()
+        return ingredients
+    } catch (err) {
+        logger.error(`while finding ingredients of ${category}`, err)
+        throw err
+    }
+}
 
 async function query(filterBy = { isIngredients: false, isOnline: false, title="", ingredients=[] }) {
     const { isIngredients, isOnline, title, ingredients } = filterBy
