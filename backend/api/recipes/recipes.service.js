@@ -10,8 +10,8 @@ module.exports = {
 
 async function getIngredients(category) {
     try {
-        const collection = await dbService.getCollection('ingredients')
-        const ingredients = await collection.find({ 'category': category }).toArray()
+        const collection = await dbService.getCollection('Ingredients')
+        const ingredients = await collection.find({ category : category }).toArray()
         return ingredients
     } catch (err) {
         logger.error(`while finding ingredients of ${category}`, err)
@@ -19,12 +19,12 @@ async function getIngredients(category) {
     }
 }
 
-async function query(filterBy = { isIngredients: false, isOnline: false, title="", ingredients=[] }) {
+async function query(filterBy = { isIngredients: false, isOnline: false, title: "", ingredients: [] }) {
     const { isIngredients, isOnline, title, ingredients } = filterBy
     const criteria = _buildCriteria(title)
     const pipeline = _buildRecipePipeline(ingredients)
     try {
-        const collection = await dbService.getCollection('recipes')
+        const collection = await dbService.getCollection('Recipes')
         var recipes = []
         if (isIngredients && isOnline) {
             recipes = await getRecipesOnline(ingredients)
@@ -120,7 +120,7 @@ function _buildRecipePipeline(ingredients) {
             {
                 '$match': {
                     'ingredients': {
-                        '$in': [...ingredients]
+                        '$in': ingredients
                     }
                 }
             }, {

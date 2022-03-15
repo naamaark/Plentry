@@ -1,8 +1,8 @@
 const express = require('express')
-const { queryRecipes } = require('./recipes.controller')
+const { queryRecipes, getIngredients } = require('./recipes.controller')
 const router = express.Router()
 
 router.post('/', queryRecipes)
-router.get('/ingredients', queryIngredients)
+router.get('/:category', getIngredients)
 
 module.exports = router
