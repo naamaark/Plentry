@@ -10,7 +10,8 @@ async function queryRecipes(req, res) {
         const recipes = await recipesService.query(filterBy)
         res.send(recipes)
     } catch (err) {
-        logger.error('Failed to query recipes', err)
+        // logger.error('Failed to query recipes', err)
+        console.log('error', err);
         res.status(500).send({ err: 'Failed to query recipes' })
     }
 }

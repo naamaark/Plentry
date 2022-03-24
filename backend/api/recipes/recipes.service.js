@@ -11,7 +11,7 @@ module.exports = {
 async function getIngredients(category) {
     try {
         const collection = await dbService.getCollection('Ingredients')
-        const ingredients = await collection.find({ category : category }).toArray()
+        const ingredients = await collection.find({ category: category }).toArray()
         return ingredients
     } catch (err) {
         logger.error(`while finding ingredients of ${category}`, err)
@@ -20,7 +20,10 @@ async function getIngredients(category) {
 }
 
 async function query(filterBy = { isIngredients: false, isOnline: false, title: "", ingredients: [] }) {
-    const { isIngredients, isOnline, title, ingredients } = filterBy
+    let { isIngredients, isOnline, title, ingredients } = filterBy
+    ingredients = ingredients.map(ingredient => {
+        return ingredient.name
+    })
     const criteria = _buildCriteria(title)
     const pipeline = _buildRecipePipeline(ingredients)
     try {
@@ -38,7 +41,7 @@ async function query(filterBy = { isIngredients: false, isOnline: false, title: 
         return recipes
     } catch (err) {
         console.log('error', err);
-        logger.error('cannot find recipes', err)
+        // logger.error('cannot find recipes', err)
         throw err
     }
 }
