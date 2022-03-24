@@ -10,7 +10,6 @@ import { loadIngredients, onAddIngredient, onRemoveIngredient, setSuggestedIngre
 
 function Homepage() {
 
-    const KEYSUGGESTED = { storage: 'suggestedIngredients', store: 'SUGGESTED' }
     const KEYCURR = { storage: 'currIngredients', store: 'CURR' }
     const KEYINGREDIENTS = { store: 'INGREDIENTS' }
 
@@ -21,13 +20,16 @@ function Homepage() {
     const currIngredients = useSelector(state => state.currIngredients);
     const suggestedIngredients = useSelector(state => state.suggestedIngredients);
     const recipes = useSelector(state => state.recipes);
+    // const webRecipes = useSelector(state => state.webRecipes)
+    // const [isWeb, setIsWeb]=useState(false)
+
 
     useEffect(() => {
         loadIngredients({ type: 'storage', key: KEYCURR.storage }, KEYCURR.store, dispatch)
     }, [])
 
     useEffect(() => {
-        loadRecipes({ ingredients: currIngredients, title: '' }, dispatch)
+        loadRecipes({ isIngredients: true, isOnline: false, ingredients: currIngredients, title: '' }, dispatch)
     }, [currIngredients])
 
     useEffect(() => {
@@ -49,8 +51,9 @@ function Homepage() {
             onAddIngredient(ingredient, KEYCURR.storage, KEYCURR.store, dispatch);
     }
 
-    const getSuggestedIngredients=() => {
-        let ingredients=new Set(suggestedIngredients.flat());
+    const getSuggestedIngredients = () => {
+        console.log('getting suggested ingredients');
+        let ingredients = new Set(suggestedIngredients.flat());
         return [...ingredients]
     }
 

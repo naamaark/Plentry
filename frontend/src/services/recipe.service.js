@@ -1,94 +1,21 @@
 import { storageService } from './async-storage.service'
-// import { googleService } from './google.service'
-
+import { httpService } from './http.service'
 const KEYSUGGESTED = 'suggestedIngredients'
 
-var Recipes = [
-    {
-        "ingredients": ["Tomato", "Carrot", "Cucumber"],
-        "title": "Salad",
-        "address": "",
-        "image": ""
-    },
-    {
-        "ingredients": ["Tomato", "Potato", "Eggplant"],
-        "title": "Ratatoui",
-        "address": "",
-        "image": ""
-    },
-    {
-        "ingredients": ["Potato", "Yam"],
-        "title": "Baked roots",
-        "address": "",
-        "image": ""
-    },
-    {
-        "ingredients": ["Tomato", "Carrot", "Potato"],
-        "title": "Soup",
-        "address": "",
-        "image": ""
-    },
-    {
-        "ingredients": ["Apple", "Banana", "Yogurt"],
-        "title": "Smoothie",
-        "address": "",
-        "image": ""
-    },
-    {
-        "ingredients": ["Egg", "Tomato", "Potato"],
-        "title": "Ommlette",
-        "address": "",
-        "image": ""
-    },
-]
-
-var ingredients =
-{
-    "Vegtables":
-        [
-            "Tomato",
-            "Carrot",
-            "Potato",
-            "Yam",
-            "Eggplant",
-            "Cucumber"
-        ],
-    "Fruits":
-        [
-            "Apple",
-            "Banana",
-            "Orange",
-            "Pulm"
-        ],
-    "Dairy":
-        [
-            "Egg",
-            "Milk",
-            "Cheese",
-            "Yogurt"
-        ]
-}
+const categories = ['vegetable', 'fruit', 'legumes and grains', 'nuts and seeds', 'dairy and eggs', 'spices and herbs', 'meats, poultry and seafood', 'vegan', 'pasta', 'baking', 'condiments and sauces', 'bread and doughs', 'alchohol and beverages']
 
 function getCategories() {
-    return Object.keys(ingredients);
+    return categories;
 }
 
-function getIngredients(category) {
-    return ingredients[category];
+async function getIngredients(category) {
+    let ingredients = await httpService.get(`recipe/${category}`)
+    return ingredients;
 }
 
-function loadRecipes({ ingredients, title }) {
-    let relevantRecipes = [];
-    if (title === '') {
-        relevantRecipes = Recipes.filter(recipe => {
-            return recipe.ingredients.some(ingredient => ingredients.includes(ingredient))
-        })
-    }
-    else {
-        const titleExp = new RegExp(title, 'i');
-        relevantRecipes = Recipes.filter(recipe => recipe.title.search(titleExp) !== -1)
-    }
-    return relevantRecipes;
+async function queryRecipes(filterBy) {
+    let recipes = await httpService.post('recipe', filterBy)
+    return recipes;
 }
 
 function getMissingIngredients(currIngredients, recipes) {
@@ -135,14 +62,14 @@ async function updateStorageIngredients(key, ingredients) {
 }
 
 async function loadIngredients(filterBy) {
-    if (filterBy.type === 'db') return getIngredients(filterBy.key)
+    if (filterBy.type === 'db') return await getIngredients(filterBy.key)
     else return await getStorageIngredients(filterBy.key)
 }
 
 
 export const recipeService = {
     getIngredients,
-    loadRecipes,
+    queryRecipes,
     getCategories,
     getMissingIngredients,
     getStorageIngredients,
