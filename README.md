@@ -1,7 +1,7 @@
 
 
 # Plentry
-Full Stack Recipes App built with React, using MongoDB and Puppeteer, in development
+Full Stack Recipes App built with React, using MongoDB and Puppeteer, in development. Check it out: https://plentryrecipes.herokuapp.com/
 
 ## Features
 
