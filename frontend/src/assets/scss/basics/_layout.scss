@@ -1,0 +1,12 @@
+.main-layout{
+    max-width: 1550px;
+    margin: 0 auto;
+    margin-inline-start: 10px;
+}
+
+.grid-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}

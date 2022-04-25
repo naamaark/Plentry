@@ -1,0 +1,16 @@
+.header {
+    background-color: $bgc1;
+
+    .logo {
+        margin-inline-end: 20px;
+        color: $clr1;
+        line-height: 1.5em;
+        font-size: 2rem;
+        font-family: dosis-bold;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $clr2;
+    }
+    .search-line {
+        @include search();
+    }
+}

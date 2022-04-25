@@ -9,8 +9,8 @@ const regex3 = /(?= cloves| fillets| sauce| juice| root| powder| zest| thighs| c
 let regex4 = '(?= , )'
 
 
-async function googleSearchRecipes(ingredients) {
-    const { searchQuery, selectedIngredients } = _createSearchQuery(ingredients)
+async function googleSearchRecipes(ingredients, title = '') {
+    const { searchQuery, selectedIngredients } = _createSearchQuery(ingredients, title)
     const regex = _createRegex(selectedIngredients)
     const url = `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${ENGINE_ID}&q=${searchQuery}`
     try {
@@ -28,20 +28,28 @@ async function _getRecipesUrls(items) {
     return items.map(item => item.link)
 }
 
-function _createSearchQuery(ingredients) {
-    let searchQuery = 'recipe with '
+function _createSearchQuery(ingredients, title = '') {
+    let searchQuery = '';
     const getSelectedIngredients = randomNoRepeats(ingredients)
     const selectedIngredients = [];
     for (let index = 0; index < 4; index++) {
         selectedIngredients.push(getSelectedIngredients())
     }
-    const last = selectedIngredients.pop()
-    selectedIngredients.forEach((ingredient) => {
-        searchQuery = searchQuery + ingredient + ' or '
-    })
-    searchQuery = searchQuery + last
-    selectedIngredients.push(last)
-    return { searchQuery, selectedIngredients };
+
+    if (title === '') {
+        searchQuery = 'recipe with '
+        const last = selectedIngredients.pop()
+        selectedIngredients.forEach((ingredient) => {
+            searchQuery = searchQuery + ingredient + ' or '
+        })
+        searchQuery = searchQuery + last
+        selectedIngredients.push(last)
+        return { searchQuery, selectedIngredients };
+    }
+    else {
+        searchQuery = title + 'recipe'
+        return { searchQuery, selectedIngredients }
+    }
 }
 
 function _createRegex(ingredients) {

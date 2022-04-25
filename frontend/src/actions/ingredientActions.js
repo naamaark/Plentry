@@ -2,6 +2,7 @@ import { storageService } from "../services/async-storage.service";
 import { recipeService } from "../services/recipe.service";
 
 export async function loadIngredients(filterBy, name, dispatch) {
+    console.log('filterBy in load ingredients', filterBy);
     try {
         let ingredients;
         ingredients = await recipeService.loadIngredients(filterBy)

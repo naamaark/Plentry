@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { recipeService } from '../services/recipe.service';
+import { utilService } from '../services/util.service';
 import ChooseIngredients from '../cmps/choose-ingredient';
+import SearchIngredients from '../cmps/search-ingredients';
+import RecipeDetails from '../cmps/recipe-details';
 import RecipeList from '../cmps/recipe-list';
-import FreeSearch from '../cmps/free-search';
-import ChooseCategory from '../cmps/choose-category';
+import Header from '../cmps/Header';
 import { useSelector, useDispatch } from 'react-redux';
 import { loadRecipes } from '../actions/recipeActions';
 import { loadIngredients, onAddIngredient, onRemoveIngredient, setSuggestedIngredients } from '../actions/ingredientActions';
@@ -11,16 +13,19 @@ import { loadIngredients, onAddIngredient, onRemoveIngredient, setSuggestedIngre
 function Homepage() {
 
     const KEYCURR = { storage: 'currIngredients', store: 'CURR' }
-    const KEYINGREDIENTS = { store: 'INGREDIENTS' }
+    const KEYRECIPES = { store: 'RECIPES' }
+    const KEYONLINE = { store: 'ONLINE' }
 
     const dispatch = useDispatch();
 
-    const categories = recipeService.getCategories();
-    const ingredients = useSelector(state => state.ingredients);
+    const [currRecipeId, setCurrRecipeId] = useState('');
+    const [isRecipe, setIsRecipe] = useState(false);
+    const [currPageRecipes, setCurrPageRecipes] = useState([])
+
     const currIngredients = useSelector(state => state.currIngredients);
     const suggestedIngredients = useSelector(state => state.suggestedIngredients);
     const recipes = useSelector(state => state.recipes);
-    // const webRecipes = useSelector(state => state.webRecipes)
+    const debounceLoadRecipes = utilService.debounce(loadRecipes, 1000)
     // const [isWeb, setIsWeb]=useState(false)
 
 
@@ -29,19 +34,19 @@ function Homepage() {
     }, [])
 
     useEffect(() => {
-        loadRecipes({ isIngredients: true, isOnline: false, ingredients: currIngredients, title: '' }, dispatch)
+        if(currIngredients.length>0){
+            debounceLoadRecipes({ isIngredients: true, isOnline: false, ingredients: currIngredients, title: '' }, KEYRECIPES.store, dispatch)
+        }
     }, [currIngredients])
 
     useEffect(() => {
-        setSuggestedIngredients(recipes, currIngredients, dispatch);
+        setSuggestedIngredients(recipes, currIngredients, dispatch)
+        setCurrPageRecipes(recipeService.changePage(0))
     }, [recipes])
 
     const searchRecipesByTitle = (title) => {
-        loadRecipes({ ingredients: [], title }, dispatch)
-    }
-
-    const chooseCategory = (category) => {
-        loadIngredients({ type: 'db', key: category }, KEYINGREDIENTS.store, dispatch)
+        console.log('searching recipes by title', title);
+        loadRecipes({ isIngredients: false, isOnLine: false, ingredients: [], title: title },KEYRECIPES.store, dispatch)
     }
 
     const updateCurrIngredients = (ingredient) => {
@@ -52,20 +57,44 @@ function Homepage() {
     }
 
     const getSuggestedIngredients = () => {
-        console.log('getting suggested ingredients');
         let ingredients = new Set(suggestedIngredients.flat());
+        ingredients = [...ingredients]
+        ingredients = ingredients.splice(0, 10)
         return [...ingredients]
     }
 
+    const chooseRecipe = (id) => {
+        setCurrRecipeId(id)
+        setIsRecipe(true)
+    }
+
+    const closeRecipeDetails = () => {
+        setIsRecipe(false)
+    }
+
+    const onChangePage = (diff) => {
+        setCurrPageRecipes(recipeService.changePage(diff))
+    }
+
     return (
-        <div>
-            <FreeSearch searchRecipesByTitle={searchRecipesByTitle} />
-            <ChooseCategory categories={categories} chooseCategory={chooseCategory} />
-            <ChooseIngredients ingredients={ingredients} searchRecipesByIngredients={updateCurrIngredients} />
-            <h2>You got {recipes.length} recipe options!</h2>
-            <h3>Do you have?</h3>
-            <ChooseIngredients ingredients={getSuggestedIngredients()} searchRecipesByIngredients={updateCurrIngredients} />
-            <RecipeList recipes={recipes} currIngredients={currIngredients} />
+        <div className='homepage'>
+            <Header searchRecipesByTitle={searchRecipesByTitle} />
+            <main className='flex main-layout'>
+                <div className="recipe-search">
+                    <h2 className='recipe-options-title'>You got {recipes.length} recipe options!</h2>
+                    <h3 className='suggestions-title'>Do you have?</h3>
+                    <div className="page-change flex">
+                        <h2 className='paging fas fa-angle-left' onClick={() => { onChangePage(-1) }}></h2>
+                        <h2 className='paging fas fa-angle-right' onClick={() => { onChangePage(1) }}></h2>
+                    </div>
+                    <ChooseIngredients style="suggested-ingredients" ingredients={getSuggestedIngredients()} searchRecipesByIngredients={updateCurrIngredients} />
+                    <RecipeList recipes={currPageRecipes} currIngredients={currIngredients} chooseRecipe={chooseRecipe} />
+                </div>
+                <div className="side-content">
+                    {!isRecipe && <SearchIngredients />}
+                    {isRecipe && <RecipeDetails id={currRecipeId} closeRecipeDetails={closeRecipeDetails} />}
+                </div>
+            </main>
         </div>
     );
 }

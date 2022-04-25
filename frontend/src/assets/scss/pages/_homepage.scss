@@ -1,0 +1,31 @@
+.homepage{
+    margin: 0 auto;
+    height: 100vh;
+    main{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr;
+        .recipe-search{
+            position: relative;
+            margin-top: 20px;
+            .page-change{
+                position: absolute;
+                top: 0px;
+                right:20px;
+                .paging{
+                    padding: 15px;
+                }
+                .paging:hover{
+                   cursor: pointer; 
+                }
+            }
+            .suggestions-title{
+                line-height: 2em;
+            }
+        }
+        .side-content{
+            margin-top: 20px;
+            box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+}

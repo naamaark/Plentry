@@ -1,0 +1,50 @@
+@font-face {
+    font-family: awe-reg;
+    src: url("../../fonts/font-awesome/fa-regular-400.ttf");
+  }
+  
+  @font-face {
+    font-family: awe-solid;
+    src: url("../../fonts/font-awesome/fa-solid-900.ttf");
+  }
+  
+  @font-face {
+    font-family: awe-brands;
+    src: url("../../fonts/font-awesome/fa-brands-400.ttf");
+  }
+  
+  .far::before {
+    font-family: awe-reg;
+  }
+  
+  .fas::before {
+    font-family: awe-solid;
+  }
+  
+  .fab::before {
+    font-family: awe-brands;
+  }
+  
+  .fas::after {
+    font-family: awe-solid;
+  }
+
+  .fas.fa-search::before {
+    content: "\f002";
+  }
+
+  .fas.fa-arrow-up-right-from-square::before{
+    content: "\f08e";
+  }
+
+  .fas.fa-angle-left::before{
+    content: "\f104"
+  }
+
+  .fas.fa-angle-right::before{
+    content: "\f105"
+  }
+
+  .fas.fa-xmark::before{
+    content: "\f00d";
+  }

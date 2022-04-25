@@ -11,7 +11,12 @@ export const storageService = {
 
 function query(entityType, delay = 0) {
     var entities = JSON.parse(localStorage.getItem(entityType)) || []
-    return entities
+    console.log('entities', entities);
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(entities)
+        }, delay)
+    })
 }
 
 
@@ -20,7 +25,6 @@ function get(entityType, entityId) {
         .then(entities => entities.find(entity => entity._id === entityId))
 }
 function post(entityType, newEntity) {
-    newEntity._id = _makeId()
     return query(entityType)
         .then(entities => {
             entities.push(newEntity)
@@ -32,7 +36,7 @@ function post(entityType, newEntity) {
 function put(entityType, updatedEntity) {
     return query(entityType)
         .then(entities => {
-            const idx = entities.findIndex(entity => entity._id === updatedEntity._id)
+            const idx = entities.findIndex(entity => entity.name === updatedEntity.name)
             entities.splice(idx, 1, updatedEntity)
             save(entityType, entities)
             return updatedEntity

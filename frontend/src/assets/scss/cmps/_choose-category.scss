@@ -1,0 +1,19 @@
+.choose-category {
+    background-color: $clr2;
+    .category-list {
+        .category-card {
+            .category-image {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+            }
+            .category-image:hover{
+                opacity: 0.5;
+                cursor: pointer;
+            }
+            .category-name{
+                text-align: center;
+            }
+        }
+    }
+}

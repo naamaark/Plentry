@@ -18,8 +18,9 @@ async function queryRecipes(req, res) {
 
 async function getIngredients(req, res) {
     try {
-        if (!req.params.category) return
-        const ingredients = await recipesService.getIngredients(req.params.category)
+        const filterBy = req.body
+        console.log('filterby', filterBy);
+        const ingredients = await recipesService.getIngredients(filterBy)
         res.send(ingredients)
     } catch (err) {
         logger.error('Failed to get ingredients', err)

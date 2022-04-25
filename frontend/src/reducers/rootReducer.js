@@ -1,12 +1,13 @@
 import { combineReducers } from 'redux';
 import createIngredientsWithNamedType from './ingredientReducer';
-import recipeReducer from './recipeReducer';
+import createRecipesWithNamedType from './recipeReducer';
 
 const rootReducer = combineReducers({
     ingredients: createIngredientsWithNamedType('INGREDIENTS'),
     suggestedIngredients: createIngredientsWithNamedType('SUGGESTED'),
     currIngredients: createIngredientsWithNamedType('CURR'),
-    recipes: recipeReducer
+    recipes: createRecipesWithNamedType('RECIPES'),
+    onlineRecipes: createRecipesWithNamedType('ONLINE')
 })
 
 export default rootReducer

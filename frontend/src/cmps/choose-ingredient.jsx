@@ -1,18 +1,13 @@
+import React from 'react';
+import IngredientButton from './ingredient-button';
 
-function ChooseIngredients({ ingredients, searchRecipesByIngredients }) {
-    let textIngredients;
-    if (typeof (ingredients[0]) === 'object') {
-        textIngredients = ingredients.map(ingredient => {
-            return ingredient.name
-        })
-    }
-    else textIngredients = ingredients
+function ChooseIngredients({ style, ingredients, searchRecipesByIngredients }) {
     return (
-        <div>
+        <div className={style}>
             {
-                ingredients.map((ingredient, idx) => {
+                ingredients.map((ingredient) => {
                     if (ingredient) {
-                        return <button onClick={() => { searchRecipesByIngredients(ingredient) }}>{textIngredients[idx]}</button>;
+                        return <IngredientButton ingredient={ingredient} searchRecipesByIngredients={searchRecipesByIngredients} />
                     }
                     else return ''
                 })

@@ -8,10 +8,21 @@ module.exports = {
     getIngredients
 }
 
-async function getIngredients(category) {
+async function getIngredients(filterBy) {
+    let ingredients = []
     try {
         const collection = await dbService.getCollection('Ingredients')
-        const ingredients = await collection.find({ category: category }).toArray()
+        if (filterBy.by === 'name') {
+            console.log('searching ingredient by name');
+            const criteria = _buildCriteria(filterBy.key)
+            ingredients = await collection.find(criteria).toArray()
+        }
+        else {
+            ingredients = await collection.find({ category: filterBy.key }).toArray()
+        }
+        ingredients = ingredients.map(ingredient => {
+            return ingredient.name
+        })
         return ingredients
     } catch (err) {
         logger.error(`while finding ingredients of ${category}`, err)
@@ -21,22 +32,25 @@ async function getIngredients(category) {
 
 async function query(filterBy = { isIngredients: false, isOnline: false, title: "", ingredients: [] }) {
     let { isIngredients, isOnline, title, ingredients } = filterBy
-    ingredients = ingredients.map(ingredient => {
-        return ingredient.name
-    })
     const criteria = _buildCriteria(title)
     const pipeline = _buildRecipePipeline(ingredients)
     try {
         const collection = await dbService.getCollection('Recipes')
         var recipes = []
-        if (isIngredients && isOnline) {
-            recipes = await getRecipesOnline(ingredients)
-        }
-        else if (isIngredients) {
+        // if (isIngredients && isOnline) {
+        //     console.log('client ask to search recipes online');
+        //     recipes = await getRecipesOnline(ingredients)
+        // }
+        if (isIngredients) {
+            console.log('client ask to search recipes on db', pipeline);
             recipes = await collection.aggregate(pipeline).toArray()
         }
         else {
             recipes = await collection.find(criteria).toArray()
+        }
+        if (recipes.length < 10) {
+            console.log('recipes length', recipes.length);
+            recipes = await getRecipesOnline(ingredients, title)
         }
         return recipes
     } catch (err) {
@@ -46,8 +60,9 @@ async function query(filterBy = { isIngredients: false, isOnline: false, title: 
     }
 }
 
-async function getRecipesOnline(ingredients) {
-    const { recipeUrls, regex } = await searchRecipeService.googleSearchRecipes(ingredients)
+async function getRecipesOnline(ingredients, title) {
+    console.log('getting recipes online')
+    const { recipeUrls, regex } = await searchRecipeService.googleSearchRecipes(ingredients, title)
     let recipes = await recipeUrls.map(async (url) => {
         let rawRecipe = await scraperService.scrapeRecipe(url, regex)
         if (!rawRecipe.ingredients) {
@@ -63,11 +78,12 @@ async function getRecipesOnline(ingredients) {
     })
     recipes = await Promise.all(recipes)
     recipes = recipes.filter(recipe => recipe)
-    _updateRecipes(recipes)
+    await _updateRecipes(recipes)
     return recipes
 }
 
 async function matchIngredietns(ingredientsFromParse) {
+    console.log('matching ingredients');
     try {
         const collection = await dbService.getCollection('Ingredients')
         let num = await collection.countDocuments()
@@ -93,6 +109,7 @@ async function matchIngredietns(ingredientsFromParse) {
 }
 
 async function _updateRecipes(recipes) {
+    console.log('saving recipes to db');
     const collection = await dbService.getCollection('Recipes')
     await recipes.forEach(async (recipe) => {
         try {
@@ -111,6 +128,10 @@ function _buildCriteria(title) {
         criteria.$or = [
             {
                 title: txtCriteria
+            }
+            ,
+            {
+                name: txtCriteria
             }
         ]
     }
@@ -142,11 +163,15 @@ function _buildRecipePipeline(ingredients) {
                     }
                 }
             }, {
+                '$match': {
+                    'missing_num': {
+                        '$lt': 10
+                    }
+                }
+            }, {
                 '$sort': {
                     'missing_num': 1
                 }
-            }, {
-                '$limit': 10
             }
         ]
     } catch (error) {

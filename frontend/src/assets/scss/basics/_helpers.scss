@@ -1,0 +1,38 @@
+// flex helpers
+
+.flex {
+    display: flex;
+  
+    > *.full {
+      flex: 1;
+    }
+    &.column {
+      flex-direction: column;
+    }
+    &.justify-center {
+      justify-content: center;
+    }
+    &.align-center {
+      align-items: center;
+    }
+    &.space-between {
+      justify-content: space-between;
+    }
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  
+  // clean
+  
+  .clean-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .space-letters{
+    letter-spacing: 0.25em;
+  }

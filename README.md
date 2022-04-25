@@ -17,7 +17,7 @@ Full Stack Recipes App built with React, using MongoDB and Puppeteer, in develop
 [![Redux](https://img.shields.io/badge/Redux-593D88?style=fflat-square&logo=redux&logoColor=white)](https://redux.js.org/)
 [![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/)
 [![JS](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://www.javascript.com/)
-[![JS](https://img.shields.io/badge/-%20MongoDB-lightgrey?logo=mongodb)](https://www.javascript.com/)
+[![MongoDB](https://img.shields.io/badge/-%20MongoDB-lightgrey?logo=mongodb)](https://www.mongodb.com/)
 
 
 ## Lessons Learned

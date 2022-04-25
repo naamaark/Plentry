@@ -1,0 +1,20 @@
+//SETUP
+@import "setup/variables";
+@import "setup/typography";
+@import "setup/mixins";
+
+//BASE
+@import "basics/base";
+@import "basics/helpers";
+@import "basics/layout";
+@import "basics/font-awesome";
+
+//CMPS
+@import "cmps/header";
+@import "cmps/choose-category";
+@import "cmps/search-ingredients";
+@import "cmps/recipe-preview";
+@import "cmps/searched-ingredients";
+
+//PAGES
+@import "pages/homepage";

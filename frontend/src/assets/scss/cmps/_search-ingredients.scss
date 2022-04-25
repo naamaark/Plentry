@@ -1,0 +1,33 @@
+.search-ingredients {
+    margin: 0 auto;
+    height: 85vh;
+    overflow-y: scroll;
+    width: 100%;
+    .search-header {
+        position: sticky;
+        top: 0;
+        background-color: $clr2;
+        .choose-title {
+            text-align: center;
+            line-height: 2.5em;
+            font-size: 1.2rem;
+        }
+        .search-line {
+            @include search($bgc2);
+
+        }
+        .search-line:focus{
+            outline: 1px solid black;
+        }
+    }
+    .choose-ingredients-container {
+        .close-btn {
+            border: none;
+            background-color: transparent;
+            margin-inline-start: 15px;
+        }
+        .close-btn:hover{
+            cursor: pointer;
+        }
+    }
+}

@@ -3,7 +3,9 @@ export const utilService = {
     makeLorem,
     getRandomIntInclusive,
     delay,
-    shuffle
+    shuffle,
+    trimString,
+    debounce
 }
 
 function makeId(length = 6) {
@@ -15,6 +17,13 @@ function makeId(length = 6) {
     }
 
     return txt;
+}
+
+function trimString(str, start, length) {
+    if (str.length > length) {
+        return str.substring(start, length - 1)
+    }
+    return str
 }
 
 function makeLorem(size = 100) {
@@ -40,20 +49,33 @@ function delay(ms = 1500) {
 }
 
 function shuffle(array) {
-    let currentIndex = array.length,  randomIndex;
-  
+    let currentIndex = array.length, randomIndex;
+
     // While there remain elements to shuffle...
     while (currentIndex != 0) {
-  
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-  
-      // And swap it with the current element.
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
     }
-  
+
     return array;
-  }
+}
+
+function debounce(func, wait) {
+    let timeout;
+    return async function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
 
