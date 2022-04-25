@@ -47,13 +47,14 @@ p {
   margin-inline-end: 5px;
   margin-block-end: 10px;
   background-color: $bgc2;
+  font-size: 1rem;
 }
 
-.ingredient-button:hover{
-background-color: $clr1;
-cursor: pointer;
+.ingredient-button:hover {
+  background-color: $clr1;
+  cursor: pointer;
 }
 
-.selected{
+.selected {
   background-color: $bgc1;
 }
